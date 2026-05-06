@@ -13,7 +13,7 @@ class Program
     var server = new Server(port);
     var database = new Database();
 
-    Console.WriteLine("The server is running");
+    Console.WriteLine("The server is running!");
     Console.WriteLine($"Local:   http://localhost:{port}/website/pages/index.html");
     Console.WriteLine($"Network: http://{Network.GetLocalNetworkIPAddress()}:{port}/website/pages/index.html");
 
