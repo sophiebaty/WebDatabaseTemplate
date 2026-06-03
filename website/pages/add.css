@@ -1,0 +1,93 @@
+#alertDiv {
+    color: red;
+}
+
+body {
+    background-image: url('../image_09553b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#containerDiv {
+    background-color: white;
+    border-style: solid;
+    border-width: 6px;
+    border-color: black;
+    border-radius: 10px;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    width: 450px;
+    text-align: center;
+}
+
+#addTitle {
+    font-family: "Arial Black", sans-serif;
+    font-size: 32px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+#q, #a, #b {
+    width: 90%;
+    font-size: 18px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#saveButoon {
+    font-family: "Arial Black", sans-serif;
+    font-size: 22px;
+    background-color: yellow;
+    color: black;
+    
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 5px;
+    
+    width: 95%;
+    padding: 12px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#add-menuButton {
+    font-family: "Arial Black", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: red;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 3px;
+    position: absolute;
+    top: 20px;   
+    left: 20px;  
+
+    display: inline-flex;
+    align-items: center;
+}
+#img-icon {
+    width: 20px;       
+    height: 20px;       
+    margin-right: 10px; 
+}

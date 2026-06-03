@@ -1,8 +1,12 @@
-#containerDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+   #indexTitle {
+   font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 70px;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    text-shadow: 2px 2px 0px #fff;
+
+   }
 
 .authDiv {
   margin: 1rem;
@@ -13,4 +17,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/056/259/065/non_2x/pop-art-background-comic-book-superhero-backdrop-with-retro-starburst-effect-compare-template-with-speech-bubble-frame-blue-and-red-vintage-versus-abstract-poster-with-radial-rays-and-halftone-vector.jpg);
+   background-size: cover; 
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 87vh;
+  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+}
+
+#startButton {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;   
+    padding: 10px 20px;    
+    margin: 8px 0;       
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;   
+    transition: transform 0.1s ease;
+}
+
+
+#addButton{
+   font-family: Arial, sans-serif;
+    font-size: 1.2rem;   
+    padding: 10px 20px;    
+    margin: 8px 0;       
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;   
+    transition: transform 0.1s ease;
 }
