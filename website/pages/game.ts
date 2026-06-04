@@ -12,12 +12,14 @@ var nextButton = get("button", "nextButton");
 nextButton.onclick = nextQuestion;
 
 
-send("getQuestions", []).then((data: any) => {
+async function start() {
 
-    questions = data;
-    console.log(questions);
+    questions = await send("getQuestions", []);
+
     showQuestion();
-});
+}
+
+start();
 
 function showQuestion() {
 
@@ -46,9 +48,9 @@ function showQuestion() {
         html += `
             <br><br>
             <h3>
-                ${percentA}% chose: ${q.optionA}
-                <br>
-                ${percentB}% chose: ${q.optionB}
+                ${percentA}% 
+                
+                ${percentB}% 
             </h3>
         `;
     }
@@ -59,8 +61,8 @@ function showQuestion() {
 function vote(option: string) {
 
     let q = questions[index];
-    console.log(q.id);
-    send("vote", [q.Id, option]);
+    console.log(q);
+    send("vote", [q.id, option]);
 
     if (option == "A") {
         q.votesA++;

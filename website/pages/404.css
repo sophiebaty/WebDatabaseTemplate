@@ -2,8 +2,6 @@ body {
   background-color: black
 }
 
-
-
 #containerDiv {
   display: flex;
   flex-direction: column;
