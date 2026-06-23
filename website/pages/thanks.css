@@ -1,0 +1,56 @@
+/* Applies styles when dark mode is enabled */
+.dark-mode {
+
+    background-color: black; /* Changes the page background to black */
+    color: white; /* Makes the default text color white */
+}
+
+/* Styles all buttons in dark mode */
+.dark-mode button {
+
+    background-color: #333; /* Gives buttons a dark gray background */
+    color: white; /* Makes the button text white */
+    border: 1px solid #666; /* Adds a gray border around the buttons */
+}
+
+/* Styles the entire page */
+body {
+
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Arranges elements vertically */
+    justify-content: center; /* Centers elements vertically */
+    align-items: center; /* Centers elements horizontally */
+    min-height: 100vh; /* Makes the body at least the full height of the browser window */
+    margin: 0; /* Removes the browser's default margins */
+    text-align: center; /* Centers all text inside the body */
+}
+
+/* Styles the main heading */
+h1 {
+
+    font-size: 48px; /* Makes the heading large */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* Styles all buttons */
+button {
+
+    font-size: 22px; /* Makes the button text larger */
+    padding: 12px 24px; /* Adds space inside the button */
+    border-radius: 10px; /* Rounds the corners */
+    cursor: pointer; /* Changes the mouse cursor to a hand on hover */
+}
+
+/* Styles the celebration GIF */
+#celebrationGif {
+
+    width: 250px; /* Sets the width of the GIF */
+    margin: 20px 0; /* Adds space above and below the GIF */
+}
+
+/* Styles paragraph text */
+p {
+
+    font-size: 20px; /* Makes paragraph text larger */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+}

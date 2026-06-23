@@ -1,62 +1,150 @@
-   #indexTitle {
-   font-family: 'Impact', 'Arial Black', sans-serif;
-    font-size: 70px;
-    color: #000000;
-    margin-bottom: 5px;
-    margin-top: 1px;
-    text-shadow: 2px 2px 0px #fff;
+/* Styles the main title on the menu page */
+#indexTitle {
 
-   }
+    font-family: 'Impact', 'Arial Black', sans-serif; /* Uses a bold font */
+    font-size: 70px; /* Makes the title very large */
+    color: #000000; /* Sets the text color to black */
+    margin-bottom: 5px; /* Small space below the title */
+    margin-top: 1px; /* Very small space above the title */
+    text-shadow: 2px 2px 0px #fff; /* Adds a white shadow behind the text */
+}
 
+/* Styles the container used for authentication or menu content */
 .authDiv {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+    margin: 1rem; /* Space around the container */
+    padding: 1rem; /* Space inside the container */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounds the corners */
+    display: flex; /* Uses Flexbox layout */
+    flex-direction: column; /* Places children vertically */
+    align-items: center; /* Centers children horizontally */
 }
 
-
+/* Styles the whole page */
 body {
-   margin: 0;
-   padding: 0;
-   background-image: url(https://static.vecteezy.com/system/resources/previews/056/259/065/non_2x/pop-art-background-comic-book-superhero-backdrop-with-retro-starburst-effect-compare-template-with-speech-bubble-frame-blue-and-red-vintage-versus-abstract-poster-with-radial-rays-and-halftone-vector.jpg);
-   background-size: cover; 
-   background-repeat: no-repeat;
-   background-position: center;
-   height: 87vh;
-  
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;     
-    min-height: 100vh;
+
+    margin: 0; /* Removes the browser's default margin */
+    padding: 0; /* Removes default padding */
+    background-image: url(https://static.vecteezy.com/system/resources/previews/056/259/065/non_2x/pop-art-background-comic-book-superhero-backdrop-with-retro-starburst-effect-compare-template-with-speech-bubble-frame-blue-and-red-vintage-versus-abstract-poster-with-radial-rays-and-halftone-vector.jpg); /* Sets the page background image */
+    background-size: cover; /* Makes the image cover the whole screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    height: 87vh; /* Sets the body's height */
+    display: flex; /* Uses Flexbox */
+    flex-direction: column; /* Arranges elements vertically */
+    justify-content: center; /* Centers elements vertically */
+    align-items: center; /* Centers elements horizontally */
+    min-height: 100vh; /* Makes sure the body fills the viewport */
 }
 
+/* Styles the Start button */
 #startButton {
-    font-family: Arial, sans-serif;
-    font-size: 1.2rem;   
-    padding: 10px 20px;    
-    margin: 8px 0;       
-    cursor: pointer;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 4px;   
-    transition: transform 0.1s ease;
+
+    font-family: Arial, sans-serif; /* Uses Arial font */
+    font-size: 1.2rem; /* Sets the text size */
+    padding: 10px 20px; /* Adds space inside the button */
+    margin: 8px 0; /* Adds space above and below */
+    cursor: pointer; /* Shows a hand cursor on hover */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Black border */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: transform 0.1s ease; /* Smooth animation for transformations */
 }
 
+/* Styles the Add Question button */
+#addButton {
 
-#addButton{
-   font-family: Arial, sans-serif;
-    font-size: 1.2rem;   
-    padding: 10px 20px;    
-    margin: 8px 0;       
-    cursor: pointer;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 4px;   
-    transition: transform 0.1s ease;
+    font-family: Arial, sans-serif; /* Uses Arial font */
+    font-size: 1.2rem; /* Sets the text size */
+    padding: 10px 20px; /* Adds space inside */
+    margin: 8px 0; /* Space above and below */
+    cursor: pointer; /* Shows a hand cursor */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Black border */
+    border-radius: 4px; /* Rounded corners */
+    transition: transform 0.1s ease; /* Smooth animation */
 }
+
+/* Changes the Start button in dark mode */
+.dark-mode #startButton {
+
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+}
+
+/* Changes the Add button in dark mode */
+.dark-mode #addButton {
+
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+}
+
+/* Styles the outer container of the dark mode switch */
+.switch {
+
+    position: fixed; /* Keeps it fixed on the screen */
+    top: 15px; /* 15px from the top */
+    left: 15px; /* 15px from the left */
+    display: inline-block; /* Allows setting width and height */
+    width: 50px; /* Width of the switch */
+    height: 26px; /* Height of the switch */
+}
+
+/* Hides the original checkbox */
+.switch input {
+
+    display: none;
+}
+
+/* Styles the switch background */
+.slider {
+
+    position: absolute; /* Positions it inside the switch */
+    inset: 0; /* Makes it fill the switch container */
+    background-color: #ccc; /* Gray when turned off */
+    border-radius: 26px; /* Makes it rounded */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: 0.3s; /* Smooth color transition */
+}
+
+/* Styles the movable circle inside the switch */
+.slider::before {
+
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    width: 20px; /* Circle width */
+    height: 20px; /* Circle height */
+    left: 3px; /* Distance from the left */
+    top: 3px; /* Distance from the top */
+    background: white; /* White circle */
+    border-radius: 50%; /* Makes it perfectly round */
+    transition: 0.3s; /* Smooth movement */
+}
+
+/* Changes the switch background when enabled */
+input:checked + .slider {
+
+    background-color: #0c0c0c; /* Black background */
+}
+
+/* Moves the circle when the switch is enabled */
+input:checked + .slider::before {
+
+    transform: translateX(24px); /* Slides the circle to the right */
+}
+
+/* Positions the "Dark Mode" text */
+#darkModeText {
+
+    position: fixed; /* Keeps it fixed on screen */
+    top: 18px; /* 18px from the top */
+    left: 75px; /* Places it to the right of the switch */
+}
+
+/* Makes the text white in dark mode */
+.dark-mode #darkModeText {
+
+    color: white;
+}
+

@@ -1,0 +1,120 @@
+/* Applies these styles when dark mode is enabled */
+.dark-mode {
+
+    background-color: rgb(0, 0, 0); /* Changes the page background to black */
+
+    color: white; /* Makes the default text color white */
+}
+
+/* Changes the left answer button in dark mode */
+.dark-mode #optionAButton {
+
+    background-color: darkred; /* Makes the button dark red */
+}
+
+/* Changes the right answer button in dark mode */
+.dark-mode #optionBButton {
+
+    background-color: darkblue; /* Makes the button dark blue */
+}
+
+/* Changes the menu button in dark mode */
+.dark-mode #game-menuButton {
+
+    background-color: rgb(23, 23, 23); /* Gives it a dark gray background */
+}
+
+/* Changes the Next button in dark mode */
+.dark-mode #nextButton {
+
+    background-color: rgb(23, 23, 23); /* Dark gray background */
+    color: white; /* White text */
+}
+
+/* Styles the menu button */
+#game-menuButton {
+
+    background-color: #f6f6f6; /* Light gray background */
+    padding: 12px 20px; /* Adds space inside the button */
+    border: none; /* Removes the default border */
+    border-radius: 10px; /* Rounds the corners */
+    cursor: pointer; /* Shows a hand cursor when hovering */
+}
+
+/* Styles the Next button */
+#nextButton {
+
+    position: fixed; /* Keeps the button in the same place on the screen */
+    top: 20px; /* Places it 20px from the top */
+    right: 20px; /* Places it 20px from the right */
+    padding: 12px 20px; /* Adds space inside the button */
+    border-radius: 10px; /* Rounds the corners */
+    border-width: 0px; /* Removes the border width */
+}
+
+/* Styles the results section (percentages) */
+#results {
+
+    display: flex; /* Places child elements in a row */
+    justify-content: center; /* Centers them horizontally */
+    gap: 350px; /* Leaves space between the percentages */
+    font-size: 30px; /* Makes the text large */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 50px; /* Adds space above the results */
+}
+
+/* Styles the question text */
+#questionBox {
+
+    text-align: center; /* Centers the text */
+    font-size: 40px; /* Makes the question large */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 50px; /* Adds space above the question */
+}
+
+/* Additional styling for the results section */
+#results {
+
+    position: fixed; /* Keeps the results in a fixed position */
+    bottom: 270px; /* Places them above the answer buttons */
+    width: 100%; /* Makes the container span the full page width */
+    display: flex; /* Uses Flexbox */
+    justify-content: center; /* Centers the content */
+    gap: 550px; /* Creates a large space between the two percentages */
+    font-size: 30px; /* Sets the text size */
+    font-weight: bold; /* Makes the text bold */
+}
+
+/* Styles the container that holds the two answer buttons */
+#answers {
+
+    position: fixed; /* Keeps the buttons fixed on the screen */
+    bottom: 30px; /* Places them near the bottom */
+    left: 0; /* Aligns the container to the left edge */
+    width: 100%; /* Makes it span the full width */
+    display: flex; /* Places buttons next to each other */
+    justify-content: center; /* Centers the buttons */
+    gap: 50px; /* Leaves space between the buttons */
+}
+
+/* Styles the first answer button */
+#optionAButton {
+
+    background-color: red; /* Red background */
+    border-radius: 15px; /* Rounded corners */
+    width: 35vw; /* Width is 35% of the browser window */
+    height: 25vh; /* Height is 25% of the browser window */
+    border: none; /* Removes the border */
+    font-size: 30px; /* Makes the button text large */
+}
+
+/* Styles the second answer button */
+#optionBButton {
+
+    background-color: blue; /* Blue background */
+    border-radius: 15px; /* Rounded corners */
+    width: 35vw; /* Width is 35% of the browser window */
+    height: 25vh; /* Height is 25% of the browser window */
+    border: none; /* Removes the border */
+    font-size: 30px; /* Makes the button text large */
+}

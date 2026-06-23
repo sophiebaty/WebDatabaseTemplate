@@ -1,90 +1,124 @@
-#alertDiv {
-    color: red;
+/* Changes the appearance of all input fields in dark mode */
+.dark-mode input {
+
+    background-color: #222; /* Makes the input background dark gray */
+    color: white; /* Makes the text inside the input white */
+    border: 1px solid white; /* Adds a white border around the input */
 }
 
+/* Changes the card container in dark mode */
+.dark-mode .card {
+    background-color: #1e1e1e; /* Dark background for the card */
+    color: white; /* White text inside the card */
+}
+
+/* Changes the title color in dark mode */
+.dark-mode #addTitle {
+    color: white; /* Makes the heading white */
+}
+
+/* Changes the menu button background in dark mode */
+.dark-mode #add-menuButton {
+    background-color: black; /* Makes the button background black */
+}
+
+/* Styles the Save button in dark mode */
+.dark-mode #saveButton {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+    border: 1px solid #666; /* Gray border */
+}
+
+/* Styles the alert message */
+ #alertDiv {
+    color: red; /* Displays alert text in red */
+}
+
+/* Styles the page title */
 #addTitle {
-    font-family: "Arial Black", sans-serif;
-    font-size: 32px;
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 25px;
+    font-family: "Arial Black", sans-serif; /* Uses a bold font */
+    font-size: 32px; /* Sets the text size */
+    color: black; /* Makes the text black */
+    margin-top: 0px; /* Removes space above the title */
+    margin-bottom: 25px; /* Adds space below the title */
 }
 
+/* Styles all three text input fields */
 #q, #a, #b {
-    width: 90%;
-    font-size: 18px;
-    padding: 10px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-    border-radius: 5px;
-   
+    width: 90%; /* Makes the inputs almost fill the card */
+    font-size: 18px; /* Sets the text size */
+    padding: 10px; /* Adds space inside the input */
+    border-style: solid; /* Creates a solid border */
+    border-width: 4px; /* Makes the border thicker */
+    border-color: black; /* Border color is black */
+    border-radius: 5px; /* Slightly rounds the corners */
 }
 
-#saveButoon {
-    font-family: "Arial Black", sans-serif;
-    font-size: 22px;
-    background-color: yellow;
-    color: black;
-    
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-    border-radius: 5px;
-    
-    width: 95%;
-    padding: 12px;
-    margin-top: 30px;
-    cursor: pointer;
+/* Styles the Save button */
+#saveButton {
+    font-family: "Arial Black", sans-serif; /* Uses a bold font */
+    font-size: 22px; /* Makes the text larger */
+    background-color: yellow; /* Yellow button background */
+    color: black; /* Black text */
+
+    border-style: solid; /* Solid border */
+    border-width: 4px; /* Thick border */
+    border-color: black; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+
+    width: 95%; /* Makes the button almost fill the card */
+    padding: 12px; /* Adds padding inside the button */
+    margin-top: 30px; /* Space above the button */
+    cursor: pointer; /* Shows a hand cursor when hovering */
 }
 
-
+/* Styles the main container card */
 .card {
-
-    width: 500px;
-
-    margin: auto;
-
-    margin-top: 50px;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    background-color: white;
-
-    box-shadow: 0px 0px 15px gray;
+    width: 500px; /* Sets the card width */
+    margin: auto; /* Centers it horizontally */
+    margin-top: 50px; /* Adds space from the top */
+    padding: 30px; /* Adds space inside the card */
+    border-radius: 20px; /* Rounds the card corners */
+    background-color: white; /* White background */
+    box-shadow: 0px 0px 15px gray; /* Adds a gray shadow around the card */
 }
 
+/* General styling for all input elements */
 input {
-
-    width: 100%;
-
-    padding: 10px;
-
-    margin-top: 10px;
-
-    margin-bottom: 20px;
-
-    border-radius: 10px;
-
-    border: 1px solid lightgray;
+    width: 100%; /* Makes inputs fill their container */
+    padding: 10px; /* Space inside the input */
+    margin-top: 10px; /* Space above */
+    margin-bottom: 20px; /* Space below */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid lightgray; /* Thin light gray border */
 }
 
+/* General styling for all buttons */
 button {
-    background-color: #ffffff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
- body{
-    background-image: url('https://i.pinimg.com/1200x/04/8f/72/048f7248fd71ff4a28594f52ccc47aa3.jpg');
-    background-size:100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    min-height: 100vh;
+    padding: 12px 20px; /* Adds space inside the button */
+    border: none; /* Removes the default border */
+    border-radius: 10px; /* Rounds the corners */
+    cursor: pointer; /* Changes the mouse to a hand on hover */
 }
 
+/* Styles the page background */
+body {
+    background-image: url('https://i.pinimg.com/1200x/04/8f/72/048f7248fd71ff4a28594f52ccc47aa3.jpg'); /* Sets the background image */
+
+    background-size: 100% 100%; /* Stretches the image to fill the page */
+
+    background-position: center; /* Centers the image */
+
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+
+    margin: 0; /* Removes default browser margins */
+
+    min-height: 100vh; /* Makes the body at least the full height of the screen */
+}
+
+/* Styles the menu button in light mode */
+#add-menuButton {
+    background-color: #f6f6f6; /* Light gray background */
+}
