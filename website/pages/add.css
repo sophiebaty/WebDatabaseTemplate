@@ -58,7 +58,7 @@
 #saveButton {
     font-family: "Arial Black", sans-serif; /* Uses a bold font */
     font-size: 22px; /* Makes the text larger */
-    background-color: yellow; /* Yellow button background */
+    background-color: rgb(247, 247, 247); /* Yellow button background */
     color: black; /* Black text */
 
     border-style: solid; /* Solid border */
